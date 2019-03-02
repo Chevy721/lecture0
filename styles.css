@@ -12,3 +12,27 @@ p {
   font-family: fantasy;
   font-weight: bold;
 }
+
+#as {
+  width: 170px;
+  text-decoration: underline;
+  text-decoration-color: red;
+  border: medium solid blue ;
+}
+
+#as::selection {
+  color: blue;
+  background-color: yellow;
+}
+
+@media (min-width:500px) {
+  h1::before {
+    content: "Welcome to My Web Page!"
+  }
+}
+
+@media (max-width:499px) {
+  h1::before {
+    content: "Welcome!"
+  }
+}
